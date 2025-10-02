@@ -18,7 +18,7 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def handle_start(message):
     # رسالة بسيطة عند الضغط على /start
-    bot.send_message(message.chat.id, "انا هنا اهلا بك ♥️")
+    bot.send_message(message.chat.id, "ههههه 😈 انا هكر ورح اهكرك لاترسل ستارت هههه")
 
 if __name__ == "__main__":
     print("Bot is starting... (press Ctrl+C to stop)")
